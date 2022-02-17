@@ -1,0 +1,35 @@
+<div>
+    <form [formGroup]="personalInfo">
+        Value: {{ personalInfo.value | json }}
+        <hr>
+        <div>
+            <mat-form-field>
+                <input matInput placeholder="Your name" formControlName="name">
+            </mat-form-field>
+        </div>
+        <h5>Mobile numbers</h5>
+        <div formGroupName="mobileNumber">
+            <div>
+                <p>Mobile number</p>
+                <mat-form-field>
+                    <input matInput placeholder="Country code" formControlName="countryCode">
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput placeholder="Number" formControlName="number">
+                </mat-form-field>
+            </div>
+        </div>
+        <h5>Mobile numbers</h5>
+        <div formGroupName="alternativeMobileNumber">
+            <div>
+                <p>Alternate Mobile number</p>
+                <mat-form-field>
+                    <input matInput placeholder="Country code" formControlName="countryCode">
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput placeholder="Number" formControlName="number">
+                </mat-form-field>
+            </div>
+        </div>
+    </form>
+</div>

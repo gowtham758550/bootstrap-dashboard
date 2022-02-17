@@ -1,0 +1,14 @@
+<div>
+    <form [formGroup]="dynamicForm">
+        Value: {{ dynamicForm.value | json }}
+        <hr>
+        <div>
+            <mat-form-field>
+                <input matInput placeholder="Your email" formControlName="email">
+            </mat-form-field>
+        </div>
+        <div>
+            <button mat-raised-button color="primary" (click)="addPhoneField()">Add phone field</button>
+        </div>
+    </form>
+</div>
